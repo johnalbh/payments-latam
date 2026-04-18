@@ -17,7 +17,7 @@ export function createCustomer(params: {
   email: string;
   fullName: string;
   document: Document;
-  phone?: string;
+  phone?: string | undefined;
 }): Customer {
   const email = params.email.trim().toLowerCase();
   if (!EMAIL_REGEX.test(email)) {
