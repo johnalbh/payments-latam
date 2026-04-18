@@ -1,0 +1,73 @@
+{
+  "name": "@johncodes/payments-latam",
+  "version": "0.1.0-alpha.0",
+  "description": "Unified TypeScript SDK for Latin American payment gateways. One API, multiple providers, strongly typed.",
+  "keywords": [
+    "payments",
+    "latam",
+    "colombia",
+    "epayco",
+    "wompi",
+    "mercadopago",
+    "payu",
+    "gateway",
+    "typescript",
+    "sdk"
+  ],
+  "author": "johnalbh",
+  "license": "MIT",
+  "homepage": "https://github.com/johnalbh/payments-latam#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/johnalbh/payments-latam.git"
+  },
+  "bugs": {
+    "url": "https://github.com/johnalbh/payments-latam/issues"
+  },
+  "type": "module",
+  "main": "./dist/index.cjs",
+  "module": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./dist/index.d.ts",
+      "import": "./dist/index.js",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "files": ["dist", "README.md", "LICENSE", "CHANGELOG.md"],
+  "sideEffects": false,
+  "engines": {
+    "node": ">=18"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "scripts": {
+    "dev": "tsup --watch",
+    "build": "tsup",
+    "test": "vitest run tests/unit",
+    "test:watch": "vitest tests/unit",
+    "test:integration": "vitest run tests/integration",
+    "lint": "biome check .",
+    "lint:fix": "biome check --write .",
+    "format": "biome format --write .",
+    "typecheck": "tsc --noEmit",
+    "changeset": "changeset",
+    "release": "pnpm build && changeset publish",
+    "prepublishOnly": "pnpm build"
+  },
+  "dependencies": {
+    "zod": "^3.23.8"
+  },
+  "devDependencies": {
+    "@biomejs/biome": "^1.9.4",
+    "@changesets/cli": "^2.27.9",
+    "@types/node": "^20.16.11",
+    "tsup": "^8.3.0",
+    "tsx": "^4.19.1",
+    "typescript": "^5.6.3",
+    "vitest": "^2.1.2"
+  },
+  "packageManager": "pnpm@9.12.1"
+}
