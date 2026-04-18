@@ -1,5 +1,5 @@
 {
-  "name": "@johncodes/payments-latam",
+  "name": "@johnalbh/payments-latam",
   "version": "0.1.0-alpha.0",
   "description": "Unified TypeScript SDK for Latin American payment gateways. One API, multiple providers, strongly typed.",
   "keywords": [

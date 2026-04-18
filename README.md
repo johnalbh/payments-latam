@@ -1,4 +1,4 @@
-# @johncodes/payments-latam
+# @johnalbh/payments-latam
 
 Unified TypeScript SDK for Latin American payment gateways. One API, multiple providers, strongly typed.
 
@@ -7,7 +7,7 @@ Unified TypeScript SDK for Latin American payment gateways. One API, multiple pr
 ## Install
 
 ```bash
-pnpm add @johncodes/payments-latam
+pnpm add @johnalbh/payments-latam
 ```
 
 Requires Node.js 18+. Server-side only.
@@ -15,7 +15,7 @@ Requires Node.js 18+. Server-side only.
 ## Quick start
 
 ```ts
-import { createClient } from '@johncodes/payments-latam';
+import { createClient } from '@johnalbh/payments-latam';
 
 const payments = createClient({
   provider: 'epayco',

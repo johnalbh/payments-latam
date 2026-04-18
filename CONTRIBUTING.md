@@ -1,6 +1,6 @@
 # Contributing
 
-Thanks for your interest in contributing to `@johncodes/payments-latam`.
+Thanks for your interest in contributing to `@johnalbh/payments-latam`.
 
 ## Ground rules
 

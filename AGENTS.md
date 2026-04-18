@@ -4,7 +4,7 @@ Machine-readable project context for LLM-based coding assistants. Keep this file
 
 ## What this project is
 
-`@johncodes/payments-latam` — a unified TypeScript SDK that wraps Latin American payment gateways behind a single, strongly-typed API. Server-side only. Currently targeting Colombia (ePayco, Wompi) for v0.1.
+`@johnalbh/payments-latam` — a unified TypeScript SDK that wraps Latin American payment gateways behind a single, strongly-typed API. Server-side only. Currently targeting Colombia (ePayco, Wompi) for v0.1.
 
 ## Architectural rules (non-negotiable)
 
